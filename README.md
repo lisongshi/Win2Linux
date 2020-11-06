@@ -1,2 +1,2 @@
 # Win2Linux
-summarize some function in the process of the translation from win to linux
+summarize some functions and replacement ideas in the process of the translation from win to linux
