@@ -2,7 +2,7 @@
 summarize some functions and replacement ideas in the process of the translation from win to linux
 
 ## function
-_splitpath
+_splitpath\<br>
 copyFile
 
 ## direct replacements
