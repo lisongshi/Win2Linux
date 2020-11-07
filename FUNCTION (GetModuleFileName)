@@ -1,12 +1,12 @@
   
-  #include <unistd.h>
+#include <unistd.h>
   
-  char buffer[512];
-  int ret =  readlink("/proc/self/exe", buffer, sizeof(buffer)-1 );
-	char szdrive_[_MAX_DRIVE];
-	char szdir_[_MAX_DIR];
-	char szfname_[_MAX_FNAME];
-	char szext_[_MAX_EXT];
-	_splitpath (buffer, szdrive_, szdir_, szfname_, szext_);
-	sprintf(buffer, "%s%s/",szdrive_, szdir_);
-	m_DirCurWork = buffer;
+char buffer[512];
+int ret =  readlink("/proc/self/exe", buffer, sizeof(buffer)-1 );
+char szdrive_[_MAX_DRIVE];
+char szdir_[_MAX_DIR];
+char szfname_[_MAX_FNAME];
+char szext_[_MAX_EXT];
+_splitpath (buffer, szdrive_, szdir_, szfname_, szext_);
+sprintf(buffer, "%s%s/",szdrive_, szdir_);
+m_DirCurWork = buffer;
