@@ -35,6 +35,9 @@ void _splitpath(const char *path, char *drive, char *dir, char *fname, char *ext
 		_split_whole_name(path, fname, ext);
 		dir[0] = '\0';
 	}
+    	char tmp[256];
+   	strcpy(tmp, dir);
+   	sprintf(dir, "%s/", tmp);   // add "/" at the last 
 }
  
 static void _split_whole_name(const char *whole_name, char *fname, char *ext)
