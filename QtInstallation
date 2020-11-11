@@ -7,6 +7,8 @@ IN_TERMINAL means cmdline inputted in terminal
 
 Step 1 DOWNLOAD:
 select version & download .run in url : https://www1.qt.io/download-open-source-access/
+// a strange problem may bother you, if you download the same intallation file(.run) in Windows
+// then you copy it to Linux, it may be useless and show "No maker found". 
 
 Step 2 INSTALL:
 (IN_TERMINAL) cd QT_PACKAGE_DIR                     
