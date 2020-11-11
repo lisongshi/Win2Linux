@@ -11,3 +11,6 @@ _access(const char * targetDir, 0) -> access(const char * targetDir, 0)
 
 #include <sys/stat.h>
 _mkdir( const char * targetDir) -> mkdir(const char * targetDir, S_IRWXU|S_IRWXG)
+
+##QT in Linux
+in QtInstallation
