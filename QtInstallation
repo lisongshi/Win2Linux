@@ -1,0 +1,38 @@
+
+Data            : Nov 11 2020 
+Intallation Dir : /opt (default)
+Qt Version      : 5.14.2
+------------------------------------------------
+IN_TERMINAL means cmdline inputted in terminal
+
+Step 1 DOWNLOAD:
+select version & download .run in url : https://www1.qt.io/download-open-source-access/
+
+Step 2 INSTALL:
+(IN_TERMINAL) cd QT_PACKAGE_DIR                     
+(IN_TERMINAL) sudo chmod +x QT_PACKAGE_NAME
+(IN_TERMINAL) sudo ./QT_PACKAGE_NAME
+
+e.g.
+[ cd /home/balboa/Downloads
+  sudo chmod +x qt-opensource-linux-x64-5.14.2.run
+  sudo ./qt-opensource-linux-x64-5.14.2.run ]
+
+Step 3 REFRESH DIR:
+(IN_TERMINAL) sudo gedit /etc/profile
+(IN_PROFILE) 
+at the end, add qt's sys dir:
+export QTDIR = /QT_INSTALL_DIR/QT_VERSION/VERSION
+export PATH = $QTDIR/gcc_64/bin:$PATH
+export LD_LIBRARY_PATH = $QTDIR/gcc_64/lib:$LD_LIBRARY_PATH
+
+(IN_TERMINAL) source /etc/profile 
+
+e.g
+[ export QTDIR = /opt/Qt5.14.2/5.14.2
+  export PATH = $QTDIR/gcc_64/bin:$PATH
+  export LD_LIBRARY_PATH = $QTDIR/gcc_64/lib:$LD_LIBRARY_PATH ]
+
+Step 4 TEST:
+(IN_TERMINAL) qmake -version
+check the output in terminal.
